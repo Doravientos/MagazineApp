@@ -1,11 +1,16 @@
 {
   "expo": {
-    "name": "chat_app",
-    "slug": "chat_app",
+    "name": "magazine",
+    "slug": "magazine",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "6bfcc3ba-4fe2-43f7-b1f1-ade3b6b134e8"
+      }
+    }
   },
-  "name": "chat_app"
+  "name": "magazine"
 }

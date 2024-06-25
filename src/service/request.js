@@ -6,7 +6,7 @@ const client = axios.create({
 });
 
 
-const request = (options) => {
+const request = async (options) => {
     const onSuccess = (response) => {
         console.debug('Request Successful!', response);
         return response;
@@ -24,7 +24,7 @@ const request = (options) => {
         return Promise.reject(error.response || error.message);
     };
 
-    return client(options)
+    return await client(options)
         .then(onSuccess)
         .catch(onError);
 };
